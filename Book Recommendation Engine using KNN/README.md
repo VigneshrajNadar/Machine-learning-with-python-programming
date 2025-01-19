@@ -1,14 +1,10 @@
-### Note
 
-You are currently reading this using Google Colaboratory which is a cloud-hosted version of Jupyter Notebook. This is a document containing both text cells for documentation and runnable code cells. If you are unfamiliar with Jupyter Notebook, watch this 3-minute introduction before starting this challenge: https://www.youtube.com/watch?v=inN8seMm7UI
-
-****
 
 ### Assignment
 
-In this challenge, you will create a book recommendation algorithm using K-Nearest Neighbors.
+In this challenge, we will create a book recommendation algorithm using K-Nearest Neighbors.
 
-You will use the [Book-Crossings](http://www2.informatik.uni-freiburg.de/~cziegler/BX/) dataset. This dataset contains 1.1 million ratings (scale of 1-10) of 270,000 books by 90,000 users.
+we will use the [Book-Crossings](http://www2.informatik.uni-freiburg.de/~cziegler/BX/) dataset. This dataset contains 1.1 million ratings (scale of 1-10) of 270,000 books by 90,000 users.
 
 After importing and cleaning the data, use `NearestNeighbors` from `sklearn.neighbors` to develop a model that shows books that are similar to a given book. The Nearest Neighbors algorithm measures distance to determine the “closeness” of instances.
 
@@ -35,6 +31,6 @@ should return:
 
 Notice that the data returned from get_recommends() is a list. The first element in the list is the book title passed in to the function. The second element in the list is a list of five more lists. Each of the five lists contains a recommended book and the distance from the recommended book to the book passed in to the function.
 
-If you graph the dataset (optional), you will notice that most books are not rated frequently. To ensure statistical significance, remove from the dataset users with less than 200 ratings and books with less than 100 ratings.
+If we graph the dataset (optional), you will notice that most books are not rated frequently. To ensure statistical significance, remove from the dataset users with less than 200 ratings and books with less than 100 ratings.
 
 The first three cells import libraries you may need and the data to use. The final cell is for testing. Write all your code in between those cells.
